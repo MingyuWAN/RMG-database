@@ -11,7 +11,9 @@ template(reactants=["Root"], products=["Y_Y"], ownReverse=False)
 
 reverse = "Bond_Dissociation"
 reversible = True
+
 reactantNum = 2
+
 productNum = 1
 
 recipe(actions=[
@@ -288,7 +290,7 @@ entry(
     group = 
 """
 1 * H         u1
-2 * [C,O,S,N] u1 r0
+2 * [C,S,N,O] u1 r0
 """,
     kinetics = None,
 )
@@ -322,7 +324,7 @@ entry(
     group = 
 """
 1 * H       u1
-2 * [O,N,C] u1 r0
+2 * [N,C,O] u1 r0
 """,
     kinetics = None,
 )
@@ -795,7 +797,7 @@ entry(
     label = "Root_N-1R->H",
     group = 
 """
-1 * [Cl,S,C,Si,N,O] u1
+1 * [Cl,C,N,Si,S,O] u1
 2 * R               u1
 """,
     kinetics = None,
@@ -1017,7 +1019,7 @@ entry(
     label = "Root_N-1R->H_N-1CClNOSSi->N",
     group = 
 """
-1 * [O,S,C] u1
+1 * [S,C,O] u1
 2 * R       u1
 """,
     kinetics = None,
@@ -1563,7 +1565,7 @@ entry(
     label = "Root_N-1R->H_N-1CClNOSSi->N_N-1COS->O",
     group = 
 """
-1 * [S,C] u1
+1 * [C,S] u1
 2 * R     u1
 """,
     kinetics = None,
@@ -1888,7 +1890,7 @@ entry(
 3   R!H           ux {2,[S,D,T,B]}
 4   R!H           ux {2,[S,D,T,B]}
 5   R!H           ux {2,[S,D,T,B]}
-6   [Cl,O,N,S,Si] u0 r0 {1,[S,D,T,B]}
+6   [Cl,N,O,S,Si] u0 r0 {1,[S,D,T,B]}
 """,
     kinetics = None,
 )
@@ -1974,7 +1976,7 @@ entry(
 3   O             u0 {2,D}
 4   C             u0 {2,S}
 5   C             u0 r0 {1,S}
-6   [Cl,O,N,S,Si] u0 r0 {1,[S,D,T,B]}
+6   [Cl,N,O,S,Si] u0 r0 {1,[S,D,T,B]}
 """,
     kinetics = None,
 )
@@ -1988,7 +1990,7 @@ entry(
 2 * C             u1 {3,D} {4,S}
 3   O             u0 {2,D}
 4   C             u0 {2,S}
-5   [Cl,O,N,S,Si] u0 r0 {1,[S,D,T,B]}
+5   [Cl,N,O,S,Si] u0 r0 {1,[S,D,T,B]}
 """,
     kinetics = None,
 )
@@ -2324,7 +2326,7 @@ entry(
 1 * C             u1 r0 {4,[S,D,T,B]}
 2 * C             u1 {3,S}
 3   C             u0 r0 {2,S}
-4   [Cl,O,N,S,Si] u0 r0 {1,[S,D,T,B]}
+4   [Cl,N,O,S,Si] u0 r0 {1,[S,D,T,B]}
 """,
     kinetics = None,
 )
@@ -2451,7 +2453,7 @@ entry(
 1 * C             u1 r0 {4,D}
 2 * C             u1 r0 {3,D}
 3   O             u0 {2,D}
-4   [Cl,O,N,S,Si] u0 r0 {1,D}
+4   [Cl,N,O,S,Si] u0 r0 {1,D}
 """,
     kinetics = None,
 )
