@@ -43485,18 +43485,484 @@ u"""
 
 entry(
     index = 1600,
-    label = "Si",
+    label = "Si-BAD!",
     group = 
 """
 1 * Si u0
 """,
-    thermo = u'Cs-HHHH',
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([9.53,11.45,12.97,14.24,16.24,17.68,19.68],'cal/(mol*K)'),
+        H298 = (99.9,'kcal/mol'),
+        S298 = (0.0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Artificially high""",
+    longDesc = 
+u"""
+Artificially high to stop things with this node entering the core!
+
+Anything that cannot match a child node, is probably a crazy species.
+""",
+)
+
+entry(
+    index = 1601,
+    label = "Sis",
+    group = 
+"""
+1 * Sis u0 p0 
+""",
+    thermo = u'Sis-Si',
     shortDesc = u"""""",
     longDesc = 
 u"""
 
 """,
 )
+
+entry(
+    index = 1602,
+    label = "Sis-Si",
+    group = 
+"""
+1 * Sis u0 p0 c0 {2,S}
+2   Si  u0 px c0 {1,S}
+""",
+    thermo = u'Sis-H3Si',
+    shortDesc = u"""""",    
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1603,
+    label = "Sis-H3Si",
+    group = 
+"""
+1 * Sis u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2   H u0 p0 c0 {1,S}
+3   H u0 p0 c0 {1,S}
+4   H u0 p0 c0 {1,S}
+5   Si u0 px c0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([9.53,11.45,12.97,14.24,16.24,17.68,19.68],'cal/(mol*K)'),
+        H298 = (10.75,'kcal/mol'),
+        S298 = (35.04,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
+""",
+)
+
+entry(
+    index = 1604,
+    label = "Sis-H2Si2",
+    group = 
+"""
+1 * Sis u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2   H u0 p0 c0 {1,S}
+3   H u0 p0 c0 {1,S}
+4   Si u0 px c0 {1,S}
+5   Si u0 px c0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([9.03,10.64,11.8,12.72,14.11,15.09,16.44],'cal/(mol*K)'),
+        H298 = (8.71,'kcal/mol'),
+        S298 = (14.86,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1605,
+    label = "Sis-HSi3",
+    group = 
+"""
+1 * Sis u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2   H u0 p0 c0 {1,S}
+3   Si u0 px c0 {1,S}
+4   Si u0 px c0 {1,S}
+5   Si u0 px c0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([8.64,9.82,10.6,11.17,11.98,12.51,13.23],'cal/(mol*K)'),
+        H298 = (4.15,'kcal/mol'),
+        S298 = (-5.09,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1606,
+    label = "Sis-Si4",
+    group = 
+"""
+1 * Sis u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2   Sis u0 px c0 {1,S}
+3   Sis u0 px c0 {1,S}
+4   Sis u0 px c0 {1,S}
+5   Sis u0 px c0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([8.33,8.96,9.3,9.5,9.71,9.81,9.92],'cal/(mol*K)'),
+        H298 = (-1.46,'kcal/mol'),
+        S298 = (-24.33,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1607,
+    label = "si-Sis-H",
+    group = 
+"""
+1 * Si u0 p[1,2] c0 {2,S} {3,S}
+2   Sis u0 {1,S}
+3   H u0 p0 c0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([6.86,7.33,7.69,8.01,8.53,8.9,9.42],'cal/(mol*K)'),
+        H298 = (63.95,'kcal/mol'),
+        S298 = (33.84,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1608,
+    label = "si-Sis2",
+    group = 
+"""
+1 * Si u0 p[1,2] c0 {2,S} {3,S}
+2   Sis u0 p0 {1,S}
+3   Sis u0 p0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([5.95,6.07,6.1,6.11,6.11,6.07,6.05],'cal/(mol*K)'),
+        H298 = (59.5,'kcal/mol'),
+        S298 = (13.41,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1609,
+    label = "si-Sis-Sid",
+    group = 
+"""
+1 * Si u0 p[1,2] c0 {2,S} {3,S}
+2   Sis u0 p0 {1,S}
+3   Sid u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([5.55,5.78,5.89,5.95,6.01,6.02,6.04],'cal/(mol*K)'),
+        H298 = (51.04,'kcal/mol'),
+        S298 = (12.96,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1610,
+    label = "si-Sid-H",
+    group = 
+"""
+1 * Si u0 p[1,2] c0 {2,S} {3,S}
+2   H u0 p0 c0 {1,S}
+3   Sid u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([6.43,7.04,7.48,7.84,8.41,8.81,9.35],'cal/(mol*K)'),
+        H298 = (55.15,'kcal/mol'),
+        S298 = (31.22,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1611,
+    label = "si-Sis-si",
+    group = 
+"""
+1 * Si u0 p[1,2] c0 {2,S} {3,S}
+2   Sis u0 p0 {1,S}
+3   Sis u0 p[1,2] {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([5.25,5.53,5.68,5.76,5.85,5.88,5.94],'cal/(mol*K)'),
+        H298 = (47.29,'kcal/mol'),
+        S298 = (14.28,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1612,
+    label = "si-Sid2",
+    group = 
+"""
+1 * Si u0 p[1,2] c0 {2,S} {3,S}
+2   Sid u0 p0 {1,S}
+3   Sid u0 p0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([5.23,5.53,5.69,5.78,5.87,5.92,5.96],'cal/(mol*K)'),
+        H298 = (43.71,'kcal/mol'),
+        S298 = (14.18,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1613,
+    label = "si-Sid-si",
+    group = 
+"""
+1 * Si u0 p[1,2] c0 {2,S} {3,S}
+2   Sid u0 p0 {1,S}
+3   Sis u0 p[1,2] {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([5.17,5.52,5.71,5.82,5.94,5.98,6.0],'cal/(mol*K)'),
+        H298 = (39.81,'kcal/mol'),
+        S298 = (11.49,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1614,
+    label = "si-si2",
+    group = 
+"""
+1 * Si u0 p[1,2] c0 {2,S} {3,S}
+2   Sis u0 p[1,2] {1,S}
+3   Sis u0 p[1,2] {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([5.1,5.5,5.73,5.87,6.0,6.04,6.04],'cal/(mol*K)'),
+        H298 = (35.9,'kcal/mol'),
+        S298 = (8.81,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1615,
+    label = "Sid",
+    group = 
+"""
+1 * Sid u0 p0 c0
+""",
+    thermo = u'Sid-Sid-H2', 
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+
+entry(
+    index=1616,
+    label="Sit-BAD!",
+    group=
+"""
+1 * Sit  u0
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([8.44, 9.62, 10.51, 11.24, 12.41, 13.29, 14.53], 'cal/(mol*K)'),
+        H298=(999.9, 'kcal/mol'),
+        S298=(0.0, 'cal/(mol*K)'),
+    ),
+    shortDesc=u"""Fictionally high""",
+    longDesc=
+u"""
+Made up to be very high in energy, so that the alternative
+resonance form is used. ie. If there's a Si with a triple
+bond that can be converted to a Si with a lone pair 
+and a single bond to something else with a lone pair.
+That is the form that has valid thermo estimates 
+in this tree, and so we force the algorithm to choose
+that form for its estimates by making this form high in H298.
+""",
+)
+
+
+entry(
+    index = 1616,
+    label = "Sid-Sid-H2",
+    group = 
+"""
+1 * Sid u0 p0 c0 {2,S} {3,S} {4,D}
+2   H u0 p0 c0 {1,S}
+3   H u0 p0 c0 {1,S}
+4   Si u0 px {1,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([8.44,9.62,10.51,11.24,12.41,13.29,14.53],'cal/(mol*K)'),
+        H298 = (33.54,'kcal/mol'),
+        S298 = (32.69,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1617,
+    label = "Sid-Sid-H-Si",
+    group = 
+"""
+1 * Sid u0 p0 c0 {2,S} {3,S} {4,D}
+2   H u0 p0 c0 {1,S}
+3   Si u0 p0 c0 {1,S}
+4   Si u0 px {1,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([7.52,8.41,9.0,9.44,10.1,10.57,11.22],'cal/(mol*K)'),
+        H298 = (28.32,'kcal/mol'),
+        S298 = (13.45,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1618,
+    label = "Sid-sid-H-Si",
+    group = 
+"""
+1 * Sid u0 p0 c0 {2,S} {3,S} {4,D}
+2   H u0 p0 c0 {1,S}
+3   Si u0 p0 c0 {1,S}
+4   Si u0 p1 {1,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([11.64,12.52,13.09,13.52,14.17,14.62,15.25],'cal/(mol*K)'),
+        H298 = (99.55,'kcal/mol'),
+        S298 = (43.93,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1619,
+    label = "Sid-Sid-Si2",
+    group = 
+"""
+1 * Sid u0 p0 c0 {2,S} {3,S} {4,D}
+2   Si u0 p0 c0 {1,S}
+3   Si u0 p0 c0 {1,S}
+4   Si u0 px (1,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([6.73,7.2,7.45,7.6,7.76,7.82,7.91],'cal/(mol*K)'),
+        H298 = (21.7,'kcal/mol'),
+        S298 = (-5.39,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1620,
+    label = "Sid-sid-Si2",
+    group = 
+"""
+1 * Sid u0 p0 c0 {2,S} {3,S} {4,D}
+2   Si u0 p0 c0 {1,S}
+3   Si u0 p0 c0 {1,S}
+4   Si u0 p1 (1,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([10.57,11.12,11.42,11.59,11.77,11.85,11.94],'cal/(mol*K)'),
+        H298 = (21.7,'kcal/mol'),
+        S298 = (-5.39,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
+entry(
+    index = 1621,
+    label = "si",
+    group = 
+"""
+1 * Si u0 p[1,2] c0 
+""",
+    thermo = u'si-Sis-H', 
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+""",
+)
+
 
 entry(
     index = 2504,
@@ -49262,6 +49728,45 @@ JPCA, 1998, 102, 4551-4558
 """,
 )
 
+entry(
+    index = 3000,
+    label = "SiH4",
+    group = 
+"""
+1 * Sis u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2   H u0 p0 c0 {1,S}
+3   H u0 p0 c0 {1,S}
+4   H u0 p0 c0 {1,S}
+5   H u0 p0 c0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([10.294,12.197,14.028,15.663,18.268,20.118,22.738],'cal/(mol*K)'),
+        H298 = (5.572,'kcal/mol'),
+        S298 = (53.803,'cal/(mol*K)'),
+    ),
+   shortDesc = u"""silane""",
+   longDesc =
+u"""
+Value from CBS-QB3 + Cantherm, with symmetry contribution removed.
+""",
+)
+
+entry(
+    index = 3001,
+    label = 'sid',
+    group =
+"""
+1 * Sid u0 p[1,2] c0
+""",
+    thermo = u'si-Sid-H',
+    shortDesc=u"""""",
+    longDesc =
+u"""
+Enabled to allow sid, which will always be bonded to an Sid.
+""",
+)
+
 tree(
 """
 L1: R
@@ -51317,7 +51822,31 @@ L1: R
             L4: O2s-SH
                 L5: O2s-S_nonDeH
                 L5: O2s-S_DeH
-    L2: Si
+    L2: Si-BAD!
+        L3: Sis
+            L4: SiH4
+            L4: Sis-Si
+                L5: Sis-H3Si
+                L5: Sis-H2Si2
+                L5: Sis-HSi3
+                L5: Sis-Si4
+        L3: Sid
+            L4: Sid-Sid-H2
+            L4: Sid-Sid-H-Si
+                L5: Sid-sid-H-Si
+            L4: Sid-Sid-Si2
+                L5: Sid-sid-Si2
+        L3: Sit-BAD!
+        L3: si
+            L4: si-Sis-H
+            L4: si-Sis2
+            L4: si-Sis-Sid
+            L4: si-Sid-H
+            L4: si-Sis-si
+            L4: si-Sid2
+            L4: si-Sid-si
+            L4: si-si2
+            L4: sid
         L3: SiJ2(S)
     L2: S
 	L3: Sc
