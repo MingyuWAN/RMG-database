@@ -5343,6 +5343,43 @@ u"""
 )
 
 entry(
+    index = 73,
+    label = "SidsJ",
+    group =
+"""
+1 * [Sid,SiO] u1
+""",
+    thermo = u'SidsJ_Si',
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 74,
+    label = "SidsJ_Si",
+    group =
+"""
+1 * Sid u1 p0 {2,D} {3,S}
+2   Si u0 {1,D}
+3   H  u0 p0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([-1.132,-1.973,-2.676,-3.215,-3.922,-4.348,-4.999],'cal/(mol*K)'),
+        H298 = (83.143,'kcal/mol'),
+        S298 = (3.006,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc =
+u"""
+Calculated from difference between [SiH2]=[SiH2] and [SiH2]=[SiH2], from G3//B3LYP.
+""",
+)
+
+entry(
     index = 79,
     label = "CdsJO",
     group = 
