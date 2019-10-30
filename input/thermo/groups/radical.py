@@ -5375,7 +5375,7 @@ entry(
     shortDesc = u"""""",
     longDesc =
 u"""
-Calculated from difference between [SiH2]=[SiH2] and [SiH2]=[SiH2], from G3//B3LYP.
+Calculated from difference between [SiH]=[SiH2] and [SiH2]=[SiH2], from G3//B3LYP.
 """,
 )
 
@@ -11264,6 +11264,8 @@ L1: Radical
                 L5: N3dJ_O
                 L5: N3dJ_N
         L3: SiJ
+            L4: SidsJ
+                L5: SidsJ_Si
         L3: SJ
             L4:S2J
                 L5: S2J-H
@@ -11283,7 +11285,7 @@ L1: Radical
                 L5: S2sJ-O
             L4:S4sJ
                 L5: S4sJ-CCC
-		L5: S4sJ-OCC
+		        L5: S4sJ-OCC
             L4:S4dJ
                 L5: S4dJ-OdH
                 L5: S4dJ-OdO
