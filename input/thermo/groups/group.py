@@ -43580,6 +43580,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43603,6 +43604,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43626,6 +43628,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43647,6 +43650,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43668,6 +43672,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43689,6 +43694,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43710,6 +43716,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43731,6 +43738,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43752,6 +43760,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43794,6 +43803,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43808,6 +43818,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43858,6 +43869,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43902,6 +43914,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
@@ -43946,6 +43959,7 @@ entry(
     shortDesc = u"""""",
     longDesc = 
 u"""
+Silicon hydride group additivity data from Wong et al., J. Phys. Chem. A, 108(5), 2004.
 """,
 )
 
