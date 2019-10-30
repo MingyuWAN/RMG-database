@@ -3930,3 +3930,31 @@ VRC-TST, the CCSD(T)/CBS limit for the quartet state interaction energy is obtai
 E = E(CCSD(T)−F12/VDZ−F12) + E(MP2−F12/VTZ−F12) − E(MP2−F12/VDZ−F12)
 """,
 )
+
+entry(
+    index = 200,
+    label = "SiH4 <=> SiH3 + H",
+    degeneracy = 4,
+    kinetics = Arrhenius(
+        A = (3.91E15, '1/s'),
+        n = 0,
+        Ea = (374.151, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    reference = Article(
+        authors = ["Takahashi, J.", "Momose, T.", "Shida, T."],
+        title = u'Thermal Rate Constants for SiH4 <=> SiH3 + H and CH4 <=> Ch3 + H by canonical variational transition state theory',
+        journal = "Bull. Chem. Soc. Jpn.",
+        volume = "67",
+        pages = """74-85""",
+        year = "1994",
+    ),
+    referenceType = "theory",
+    shortDesc = u"""Variational TST""",
+    longDesc = 
+u"""
+Geometry optimization with UHF/DZP. Total energy calculated by MC-SCF-CI. CVTST used with hindered rotor calculations. Rates fit to Arrhenius expression.
+""",
+)
