@@ -224,18 +224,18 @@ u"""
 tree(
 """
 L1: Si2S
-	L2: SiH2
-	L2: Si-Si-Si
-	L2: Si-Si-H
+    L2: SiH2
+    L2: Si-Si-Si
+    L2: Si-Si-H
 
 L1: Y_H
-	L2: H_H
-	L2: Si_H
-            L3: SiH3_R
-		L4: SiH4
-                L4: SiH3_Si
-	    L3: SiH2_R2
-            L3: SiH_R3
+    L2: H_H
+    L2: Si_H
+        L3: SiH3_R
+            L4: SiH4
+            L4: SiH3_Si
+        L3: SiH2_R2
+        L3: SiH_R3
 """
 )
 
