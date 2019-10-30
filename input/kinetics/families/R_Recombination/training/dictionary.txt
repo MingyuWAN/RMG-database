@@ -2488,7 +2488,3 @@ multiplicity 2
 3   H u0 p0 c0 {1,S}
 4   H u0 p0 c0 {1,S}
 
-H
-multiplicity 2
-1 * H u1 p0 c0
-
