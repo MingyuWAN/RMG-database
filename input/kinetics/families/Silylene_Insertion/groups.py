@@ -12,10 +12,10 @@ template(reactants=["Si2S", "Y_H"], products=["Y_Si2S_H"], ownReverse=False)
 #reverse = "Silylene_Elimination"
 
 recipe(actions=[
-    ['BREAK_BOND', '*1', 'S', '*2'],
-    ['FORM_BOND', '*1', 'S', '*3'],
-    ['FORM_BOND', '*2', 'S', '*3'],
-    ['LOSE_PAIR', '*3', '1'],
+    ['BREAK_BOND', '*1', 1, '*2'],
+    ['FORM_BOND', '*1', 1, '*3'],
+    ['FORM_BOND', '*2', 1, '*3'],
+    ['LOSE_PAIR', '*3', 1],
 ])
 
 entry(
