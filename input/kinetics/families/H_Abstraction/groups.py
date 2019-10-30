@@ -7294,9 +7294,9 @@ entry(
     label = "SiH2_triplet_H",
     group = 
 """
-1 *1 Si 2T {2,S} {3,S}
-2 *2 H 0  {1,S}
-3    H 0  {1,S}
+1 *1 Si u2 p0 c0 {2,S} {3,S}
+2 *2 H u0 p0 c0 {1,S}
+3    H u0 p0 c0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7343,9 +7343,9 @@ entry(
     label = "SiH2_triplet",
     group = 
 """
-1 *3 Si u2 p0 c0 {2,S} {3,S}
-2    H u0 p0 c0  {1,S}
-3    H u0 p0 c0  {1,S}
+1 *3 Si u2 p0 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7361,9 +7361,9 @@ entry(
     label = "SiH2_singlet_H",
     group = 
 """
-1 *1 Si 2S {2,S} {3,S}
-2 *2 H 0  {1,S}
-3    H 0  {1,S}
+1 *1 Si u0 p1 {2,S} {3,S}
+2 *2 H u0 {1,S}
+3    H u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7514,8 +7514,8 @@ L1: X_H_or_Xrad_H_Xbirad_H_Xtrirad_H
         L3: CH2_singlet_H
             L3: NH_triplet_H
             L3: NH_singlet_H
-    L3: SiH2_singlet_H
-	L3: SiH2_triplet_H
+        L3: SiH2_singlet_H
+        L3: SiH2_triplet_H
     L2: Xrad_H
         L3: C_rad_H
             L4: CH3_rad_H
@@ -7801,14 +7801,14 @@ L1: Y_rad_birad_trirad_quadrad
         L3: N_atom_doublet
         L3: CH_quartet
         L3: CH_doublet
-    L3: SiH_quartet
-	L3: SiH_doublet
+        L3: SiH_quartet
+        L3: SiH_doublet
     L2: Y_1centerbirad
         L3: O_atom_triplet
         L3: S_atom_triplet
         L3: CH2_triplet
         L3: NH_triplet
-    L3: Si_triplet
+        L3: Si_triplet
             L4: SiH2_triplet
             L4: Si_triplet_Si_H
     L2: Y_rad
@@ -8053,9 +8053,9 @@ L1: Y_rad_birad_trirad_quadrad
         L3: N5_rad
             L4: N5dc_rad
         L3: Cl_rad
-    L3: Si_rad
+        L3: Si_rad
             L4: Sis_rad
-	        L5: Si_silyl
+	            L5: Si_silyl
                 L5: Sis_rad_Si_H2
             L4: Sid_rad
                 L5: Sid_rad_Si_H
