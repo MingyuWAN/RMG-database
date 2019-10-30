@@ -43977,22 +43977,6 @@ u"""
 """,
 )
 
-
-entry(
-    index = 2504,
-    label = "SiJ2(S)",
-    group =
-"""
-1 * Si u0 p1
-""",
-    thermo = u'CJ2_singlet',
-    shortDesc = u"""""",
-    longDesc =
-u"""
-
-""",
-)
-
 entry(
     index = 1400,
     label = "S",
@@ -51861,7 +51845,6 @@ L1: R
             L4: si-Sid-si
             L4: si-si2
             L4: sid
-        L3: SiJ2(S)
     L2: S
 	L3: Sc
         L3: Sa(S)
