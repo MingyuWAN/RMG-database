@@ -84,7 +84,7 @@ entry(
 2 *2 H  u0 p0 c0 {1,S}
 3    H  u0 p0 c0 {1,S}
 4    H  u0 p0 c0 {1,S}
-5    R  ux px {1,S}
+5    R!H  ux px {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -119,8 +119,8 @@ entry(
 1 *1 Si u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 *2 H  u0 p0 c0 {1,S}
 3    H  u0 p0 c0 {1,S}
-4    R  ux px {1,S}
-5    R  ux px {1,S}
+4    R!H  ux px {1,S}
+5    R!H  ux px {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -136,9 +136,9 @@ entry(
     group = """
 1 *1 Si u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 *2 H  u0 p0 c0 {1,S}
-3    R  ux px {1,S}
-4    R  ux px {1,S}
-5    R  ux px {1,S}
+3    R!H  ux px {1,S}
+4    R!H  ux px {1,S}
+5    R!H  ux px {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -231,8 +231,8 @@ L1: Si2S
 L1: Y_H
     L2: H_H
     L2: Si_H
+        L3: SiH4
         L3: SiH3_R
-            L4: SiH4
             L4: SiH3_Si
         L3: SiH2_R2
         L3: SiH_R3
