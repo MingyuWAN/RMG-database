@@ -4,16 +4,23 @@
 name = "H2_transfer/groups"
 shortDesc = u""
 longDesc = u"""
+Orignally added:
+Author: Belinda Slakman <slakman.b@husky.neu.edu>
+Date:   Wed Nov 26 14:56:44 2014 -0800
+
+    New reaction family, H2 transfer.
+    
+    This is an important reaction in silicon hydrides where two H migrate (usually from a silane to a silylene).
 
 """
 
 template(reactants=["RH2", "Si_pair"], products=["R", "Si_pair_H2"], ownReverse=True)
 
 recipe(actions=[
-    ['BREAK_BOND', '*1', 'S', '*2'],
-    ['BREAK_BOND', '*1', 'S', '*3'],
-    ['FORM_BOND', '*2', 'S', '*4'],
-    ['FORM_BOND', '*3', 'S', '*4'],
+    ['BREAK_BOND', '*1', 1, '*2'],
+    ['BREAK_BOND', '*1', 1, '*3'],
+    ['FORM_BOND', '*2', 1, '*4'],
+    ['FORM_BOND', '*3', 1, '*4'],
     ['GAIN_PAIR', '*1', 1],
     ['LOSE_PAIR', '*4', 1]])
 
@@ -229,18 +236,18 @@ u"""
 tree(
 """
 L1: RH2
-	L2: R-SiH2
-		L3: SiH4
-		L3: R-SiH3
-			L4: Si2H6
-	L2: SiH2-triplet
+    L2: R-SiH2
+        L3: SiH4
+        L3: R-SiH3
+            L4: Si2H6
+    L2: SiH2-triplet
 
 L1: Si_pair
-	L2: Si_atom
-	L2: Y-SiH
-		L3: SiH2
-		L3: Si-SiH
-			L4: H3SiSiH
+    L2: Si_atom
+    L2: Y-SiH
+        L3: SiH2
+        L3: Si-SiH
+            L4: H3SiSiH
  
 """
 )
