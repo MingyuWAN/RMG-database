@@ -4,7 +4,11 @@
 name = "Silylene_to_Silene/groups"
 shortDesc = u""
 longDesc = u"""
+First added:
+Author: Belinda Slakman <slakman.b@husky.neu.edu>
+Date:   Mon Oct 6 10:16:41 2014 -0700
 
+    New reaction family for silylene isomerization.
 """
 
 template(reactants=["SiRSiH"], products=["SiRH=Si"], ownReverse=False)
@@ -12,10 +16,10 @@ template(reactants=["SiRSiH"], products=["SiRH=Si"], ownReverse=False)
 reverse = "Silene_to_Silylene"
 
 recipe(actions=[
-    ['BREAK_BOND', '*2', 'S', '*3'],
-    ['FORM_BOND', '*1', 'S', '*3'],
-    ['CHANGE_BOND', '*1', '1', '*2'],
-    ['LOSE_PAIR', '*1', '1']
+    ['BREAK_BOND', '*2', 1, '*3'],
+    ['FORM_BOND', '*1', 1, '*3'],
+    ['CHANGE_BOND', '*1', 1, '*2'],
+    ['LOSE_PAIR', '*1', 1]
 ])
 
 entry(
