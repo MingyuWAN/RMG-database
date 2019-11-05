@@ -252,7 +252,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
-    rank = 5
+    rank = 5,
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
