@@ -12,7 +12,7 @@ entry(
     label = "H3SiSiH <=> Si2H4",
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (7.9E12, 'cm^3/(mol*s)'),
+        A = (7.9E12, 's^-1'),
         n = 0,
         Ea = (5.3095, 'kcal/mol'),
         T0 = (1, 'K'),
@@ -38,7 +38,7 @@ entry(
     label = "Si2H5SiH <=> SiH3Si2H4",
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (2.0E12, 'cm^3/(mol*s)'),
+        A = (2.0E12, 's^-1'),
         n = 0,
         Ea = (8.1, 'kcal/mol'),
         T0 = (1, 'K'),
@@ -63,7 +63,7 @@ entry(
     label = "iSi3H7SiH <=> iSi2H6Si2H2",
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (3.16E12, 'cm^3/(mol*s)'),
+        A = (3.16E12, 's^-1'),
         n = 0,
         Ea = (9.0, 'kcal/mol'),
         T0 = (1, 'K'),
@@ -88,7 +88,7 @@ entry(
     label = "H3SiSiSiH3 <=> SiH3Si2H4",
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (5.01E12, 'cm^3/(mol*s)'),
+        A = (5.01E12, 's^-1'),
         n = 0,
         Ea = (4.7, 'kcal/mol'),
         T0 = (1, 'K'),
@@ -113,7 +113,7 @@ entry(
     label = "iSi3H7SiSiH3 <=> iSi2H6Si2HSiH3",
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1.58E12, 'cm^3/(mol*s)'),
+        A = (1.58E12, 's^-1'),
         n = 0,
         Ea = (6.1, 'kcal/mol'),
         T0 = (1, 'K'),
@@ -138,7 +138,7 @@ entry(
     label = "SiH3SiSi2H5 <=> SiH3Si2H2SiH3",
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (6.02E12, 'cm^3/(mol*s)'),
+        A = (6.02E12, 's^-1'),
         n = 0,
         Ea = (5.5, 'kcal/mol'),
         T0 = (1, 'K'),
@@ -163,7 +163,7 @@ entry(
     label = "Si4H9SiH <=> Si3H7Si2H3",
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (2.0E14, 'cm^3/(mol*s)'),
+        A = (2.0E14, 's^-1'),
         n = 0,
         Ea = (8.0, 'kcal/mol'),
         T0 = (1, 'K'),
@@ -188,7 +188,7 @@ entry(
     label = "Si3H7SiSiH3 <=> Si2H5Si2H2SiH3",
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1.58E15, 'cm^3/(mol*s)'),
+        A = (1.58E15, 's^-1'),
         n = 0,
         Ea = (5.4, 'kcal/mol'),
         T0 = (1, 'K'),
@@ -213,7 +213,7 @@ entry(
     label = "iSi3H7SiSi2H5-1 <=> iSi2H6Si2HSi2H5",
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2.0E7, 'cm^3/(mol*s)'),
+        A = (2.0E7, 's^-1'),
         n = 0,
         Ea = (7.3, 'kcal/mol'),
         T0 = (1, 'K'),
@@ -238,7 +238,7 @@ entry(
     label = "iSi3H7SiSi2H5-2 <=> iSi3H7Si2H2SiH3",
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1.58E7, 'cm^3/(mol*s)'),
+        A = (1.58E7, 's^-1'),
         n = 0,
         Ea = (7.2, 'kcal/mol'),
         T0 = (1, 'K'),
