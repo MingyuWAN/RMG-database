@@ -27,6 +27,7 @@ entry(
         year = "2007",
         url = "http://kinetics.nist.gov/kinetics/Detail?id=2007DOL/DEP460-470:1",
     ),
+    rank = 5,
     longDesc = 
 u"""
 QRRK calculations for the Si2H4 isomerization. This is the high P limit. Rate parameters are corroborated in J. Phys. Chem. 91, 5765 (1987).""",
@@ -51,6 +52,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
+    rank = 5,
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
@@ -75,6 +77,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
+    rank = 5,
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
@@ -99,6 +102,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
+    rank = 5,
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
@@ -123,6 +127,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
+    rank = 5,
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
@@ -147,6 +152,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
+    rank = 5,
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
@@ -171,6 +177,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
+    rank = 5,
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
@@ -195,6 +202,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
+    rank = 5,
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
@@ -219,6 +227,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
+    rank = 5,
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
@@ -243,6 +252,7 @@ entry(
         pages = """10933-10946""",
         year = "2009",
     ),
+    rank = 5
     longDesc = 
 u"""
 Calculations were performed with G3//B3LYP and exhibit two barriers (a stable intermediate is formed). Rates assume the second step is rate limiting, after validation of three models (full, 1st step rate limiting, 2nd step rate limiting). This assumption is considered valid under 1385 K.""",
