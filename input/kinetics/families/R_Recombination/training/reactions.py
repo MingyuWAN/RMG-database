@@ -3951,6 +3951,7 @@ entry(
         pages = """74-85""",
         year = "1994",
     ),
+    rank = 5,
     referenceType = "theory",
     shortDesc = u"""Variational TST""",
     longDesc = 
