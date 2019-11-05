@@ -10,7 +10,7 @@ group additivity values in this file.
 entry(
     index = 1,
     label = "H3SiSiH + SiH4 <=> Si2H6 + SiH2(S)",
-    degeneracy = 1,
+    degeneracy = 1.0,
     kinetics = Arrhenius(
         A = (1.73E14, 'cm^3/(mol*s)'),
         n = 0.4,
@@ -19,13 +19,8 @@ entry(
         Tmin = (700, 'K'),
         Tmax = (1150, 'K'),
     ),
-    reference = Article(
-        authors = ["Ho, P.", "Coltrin, M.E.", "Breiland, W.G."],
-        title = "Laser-Induced fluorescence measurements and kinetic analysis of Si atom formation in a rotating disk chemical vapor deposition reactor",
-        journal = "J. Phys. Chem.",  
-        pages = """10138-10147""",
-        year = "1994",
-    ),
+    rank = 4,
+    shortDesc = u"""""",
     longDesc = 
 u"""
 Experimental CVD in a rotating disk reactor, measurement via LIF of Si atoms in both silane and disilane CVD. Showed that Si atoms is produced from bimolecular pathways.
@@ -44,6 +39,7 @@ entry(
         Tmin = (700, 'K'),
         Tmax = (1150, 'K'),
     ),
+    rank = 4,
     reference = Article(
         authors = ["Ho, P.", "Coltrin, M.E.", "Breiland, W.G."],
         title = "Laser-Induced fluorescence measurements and kinetic analysis of Si atom formation in a rotating disk chemical vapor deposition reactor",
@@ -69,6 +65,7 @@ entry(
         Tmin = (300, 'K'),
         Tmax = (2000, 'K'),
     ),
+    rank = 4,
     reference = Article(
         authors = ["Dollet, A.", "de Persis, S."],               
         title = "Pressure-dependent rate coefficients of chemical reactions involving Si2H4 isomerization from QRRK calculations",                       
@@ -95,6 +92,7 @@ entry(
         Tmin = (700, 'K'),
         Tmax = (1150, 'K'),
     ),
+    rank = 4,
     reference = Article(
         authors = ["Ho, P.", "Coltrin, M.E.", "Breiland, W.G."],
         title = "Laser-Induced fluorescence measurements and kinetic analysis of Si atom formation in a rotating disk chemical vapor deposition reactor",
