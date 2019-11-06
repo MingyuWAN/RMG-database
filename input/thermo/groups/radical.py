@@ -11561,6 +11561,14 @@ L1: Radical
                 L5: N3dJ_O
                 L5: N3dJ_N
         L3: SiJ
+            L4: SisJ
+                L5: SisJ_SiLP
+                L5: SiH3
+                L5: SisJ_Si_H2
+                L5: SisJ_Si2_H
+            L4: SiJ_LP
+                L5: SiJ_LP_H
+                L5: SiJ_LP_Si
             L4: SidsJ
                 L5: SidsJ_Si
         L3: SJ
@@ -11616,6 +11624,12 @@ L1: Radical
                 L5: NJ2_O
         L3: Oa_triplet
         L3: SiJ2_triplet
+            L4: SidJ2_triplet
+                L5: Si=SiJ2_triplet
+            L4: SisJ2_triplet
+                L5: SiH2_triplet
+                L5: SiSiH_triplet
+                L5: SiSiSi_triplet
         L3: SJ2_triplet
     L2: RJ3
         L3: CJ3
